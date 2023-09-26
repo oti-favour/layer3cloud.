@@ -1,0 +1,38 @@
+/* Add your CSS styles here */
+.logo img {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.normal-text {
+    font-size: 24px;
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+.style-gradient {
+    /* Add your gradient styles here */
+    background-image: linear-gradient(45deg, #FF5733, #FFC300);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.dynamic-text {
+    font-size: 24px;
+    display: inline-block;
+    transform: translateY(0);
+    opacity: 1;
+}
