@@ -1,4 +1,4 @@
-/* Add your CSS styles here */
+
 .logo img {
     max-width: 150px; /* Adjust the size as needed */
     height: auto; /* Maintain aspect ratio */
@@ -7,32 +7,51 @@
 body {
     font-family: Arial, sans-serif;
 }
+.img-fluid {
+    max-width: 100%;
+    height: 500px !important;
+}
 
-.animated-text {
-    display: inline-block;
+@media  (max-width: 768px) {
+    .img-fluid {
+        height: 300px !important;
+        max-width: fit-content;
+    }
+}
+    
+.about-text {
+    padding-top: 82px !important; 
+}
+
+.line {
+    width: 100%;
+    height: 4rem;
     overflow: hidden;
-    white-space: nowrap;
-}
+    border: 1px solid black;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  
 
-.normal-text {
-    font-size: 24px;
-    display: inline-block;
-    transform: translateY(100%);
+/* lineup class and keyframes */
+.lineUp {
+  animation: 2s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+  0% {
     opacity: 0;
-    transition: transform 1s, opacity 1s;
-}
-
-.style-gradient {
-    /* Add your gradient styles here */
-    background-image: linear-gradient(45deg, #FF5733, #FFC300);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.dynamic-text {
-    font-size: 24px;
-    display: inline-block;
-    transform: translateY(0);
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
     opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
+
