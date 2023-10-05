@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', checkVisibility);
   });
 
+
+// for scroll texts
   
   document.addEventListener('DOMContentLoaded', function () {
     const scrollItems = document.querySelectorAll('.scroll-item');
