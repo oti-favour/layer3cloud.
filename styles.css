@@ -38,22 +38,25 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+
 .section-title {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
-  line-height: 45px;
   overflow: hidden;
 }
 
 .scroll-text {
   display: inline-block;
-  animation: rotate 10s linear infinite; /* Adjust the animation duration as needed */
+  animation: rotate 10s linear infinite;
+  height: 15px;
+  margin-top: 10px;
 }
 
 .scroll-item {
-  line-height: 5px;
+  line-height: 2px;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity  ease 1s;
   color: red;
 }
 
@@ -71,9 +74,8 @@
   40% {
     transform: translateY(-80px);
   }
-  
- 
 }
+
 
 .about-section{
   background: linear-gradient(rgb(233, 227, 227), rgba(255, 253, 253, 0.5)), url('./images/04.jpg'); 
