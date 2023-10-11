@@ -1,148 +1,235 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script
-      src="https://kit.fontawesome.com/17092ded4b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <title>Layer3 Cloud</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-white-color">
-      <div class="container-fluid">
-        <div class="logo">
-          <a href="https://www.layer3.cloud">
-            <img src="https://www.layer3.cloud/img/logo-3.jpg" alt="image" />
-          </a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <title> Layer3 Cloud</title>
 
-        <!-- Navbar links -->
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-md bg-light fixed-top">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="https://www.layer3.cloud">
+                    <img src="https://www.layer3.cloud/img/logo-3.jpg" alt="image">
+                </a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">About </a>
+              <a class="nav-link" href="#">Products</a>
+
+              <a class="nav-link dropdown-toggle " href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Virtual Data Center</a></li>
+                <li><a class="dropdown-item" href="#">VServers</a></li>
+                <li><a class="dropdown-item" href="#">Object Storage-As-A-Service</a></li>
+                <li><a class="dropdown-item" href="#">Backup-As-A-Service</a></li>
+                <li><a class="dropdown-item" href="#">Disaster Recovery-As-A-Service</a></li>
+                <li><a class="dropdown-item" href="#">CloudShare (BaaS)</a></li>
+              </ul>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Status Page</a>
+            </div>
+          </div>
+        </div>
+</nav>
+
+      <!-- Hero Section -->
+
+<section class="hero">
+  <div class="container my-5 col-sm-12">
+      <div class="row align-items-center ">
+          <div class="col-lg-6 col-sm-12 col-xs-12 animate-on-scroll ">
+              <div class="main-banner ">
+                  <h2 class= " container mt-4">
+                      <span class="cloud  ">Cloud</span> Computing Services </span> <br>
+                      <span class="bol fs-4">designed to help you succeed.</span> 
+                      <p class=" paragraph fs-5 fw-light ">Nigeria's leading cloud provider</p>
+                  </h2>
+                     
+                  
+              </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 col-xs-12 animate-on-scroll">
+              <div class="col">
+                  <div class="no-transform mt-5">
+                      <img src="images/s1.png" class="img-fluid">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="section-title pt-5">
+      <h2>We Guarantee
+        <div class="scroll-text">
+          <div class="scroll-item">Trust.</div>
+          <div class="scroll-item">Security.</div>
+          <div class="scroll-item">Performance.</div>
+          <div class="scroll-item">Reliability.</div>
+        </div>
+      </h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 ">
+       <img src="images/about.png" alt="" class="img">
+      </div>
+      <div class="col-lg-6 about-text">
+
+        <p>Localized service in Nigeria means extremely fast and ultra-low latency access to resources compared to foreign-based services</p>
+        <ul class="about-list lh-lg  ">
+          <li>99.9% availability</li>
+          <li>Multiple availability zones in Nigeria</li>
+          <li>PCI DSS certified and VMware Cloud Verified </li>
+          <li>Self-service and 24/7 support</li>
+          <li>Advanced networking and security add-ons: Firewall, VPN, IPSec, SSL</li>
+          <li>ISO 27001 and ISO 27017 cloud security certified</li>
+          <li>VMware Cloud Verified  </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="service d-flex align-items-center vh-100">
+  <div class="container">
+    <div class="row top-row">
+      <div
+        class="services service-row-1 service-1 col-sm-4 pb-5 pt-5"
+      >
+        <div class="service-title  justify-content-between">
+          <span class="icon"
+            ><i class="fa fa-server" aria-hidden="true"></i
+          ></span>
+          <h5>Virtual Data Center</h5>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        molestiae necessitatibus, totam blanditiis et consectetur laboriosam
+        illo suscipit, alias, officia similique temporibus officiis! Quaerat
+        ullam commodi quae. Alias, suscipit fuga.
+      </div>
+      <div
+        class="services service-row-1 service-2 col-sm-4 pb-5 pt-5 "
+      >
+        <div class="service-title ">
+          <span class="icon"
+            ><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+          </span>
+          <h5>VServers</h5>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        molestiae necessitatibus, totam blanditiis et consectetur laboriosam
+        illo suscipit, alias, officia similique temporibus officiis! Quaerat
+        ullam commodi quae. Alias, suscipit fuga.
+      </div>
+      <div
+        class="services service-row-1 service-3 col-sm-4 pb-5 pt-5"
+      >
+        <div class="service-title ">
+          <span class="icon"
+            ><i class="fa fa-hdd-o" aria-hidden="true"></i></span>
+          <h5>Object Storage-as-a-Service</h5>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        molestiae necessitatibus, totam blanditiis et consectetur laboriosam
+        illo suscipit, alias, officia similique temporibus officiis! Quaerat
+        ullam commodi quae. Alias, suscipit fuga.
+      </div>
+    </div>
+    <div>
+      <div class="row mt-2">
         <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
+          class="services service-row-2 service-4 col-sm-4 pb-5 pt-5 "
         >
-          <div class="navbar-nav">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Services</a>
-            <a class="nav-link" href="#">Contact Us</a>
-            <a class="nav-link" href="#">Status Page</a>
+          <div class="service-title ">
+            <span class="icon"
+              ><i class="fa fa-cogs" aria-hidden="true"></i></span>
+            <h5>Disaster Recovery-As-A-Service</h5>
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatem molestiae necessitatibus, totam blanditiis et
+          consectetur laboriosam illo suscipit, alias, officia similique
+          temporibus officiis! Quaerat ullam commodi quae. Alias, suscipit
+          fuga.
+        </div>
+        <div
+          class="services service-row-2 service-5 col-sm-4 pb-5 pt-5"
+        >
+          <div class="service-title ">
+            <span 
+              ><i class="fa fa-shield icon" aria-hidden="true"></i></span>
+            <h5>Backup As-A-Service</h5>
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatem molestiae necessitatibus, totam blanditiis et
+          consectetur laboriosam illo suscipit, alias, officia similique
+          temporibus officiis! Quaerat ullam commodi quae. Alias, suscipit
+          fuga.
+        </div>
+        <div class="services service-row-2 service-6 col-sm-4 pb-5 pt-5 ">
+          <div class="service-title ">
+            <span class="icon"
+              ><i class="fa fa-server" aria-hidden="true"></i
+            ></span>
+            <h5>CloudShare (BaaS)</h5>
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatem molestiae necessitatibus, totam blanditiis et
+          consectetur laboriosam illo suscipit, alias, officia similique
+          temporibus officiis! Quaerat ullam commodi quae. Alias, suscipit
+          fuga.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="Contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="section-title text-center">
+          <h2>Get in touch</h2>
+         
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="wrapper">
+          <div class="row no-gutters">
+            <div class="col-md-6 d-flex w-100 p-md-5 p-4 py-5">
+              <h3 class="mb-4">
+                Fill out the form below and we'll get back to you as soon as possible.
+              </h3>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
+</section>
 
-    <section class="service d-flex align-items-center vh-100">
-      <div class="container">
-        <div class="row top-row">
-          <div
-            class="services service-row-1 service-1 col-sm-4 pb-5 pt-5"
-          >
-            <div class="service-title  justify-content-between">
-              <span class="icon"
-                ><i class="fa fa-server" aria-hidden="true"></i
-              ></span>
-              <h5>Virtual Data Center</h5>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            molestiae necessitatibus, totam blanditiis et consectetur laboriosam
-            illo suscipit, alias, officia similique temporibus officiis! Quaerat
-            ullam commodi quae. Alias, suscipit fuga.
-          </div>
-          <div
-            class="services service-row-1 service-2 col-sm-4 pb-5 pt-5 "
-          >
-            <div class="service-title ">
-              <span class="icon"
-                ><i class="fa fa-cloud-upload" aria-hidden="true"></i>
-              </span>
-              <h5>VServers</h5>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            molestiae necessitatibus, totam blanditiis et consectetur laboriosam
-            illo suscipit, alias, officia similique temporibus officiis! Quaerat
-            ullam commodi quae. Alias, suscipit fuga.
-          </div>
-          <div
-            class="services service-row-1 service-3 col-sm-4 pb-5 pt-5"
-          >
-            <div class="service-title ">
-              <span class="icon"
-                ><i class="fa fa-hdd-o" aria-hidden="true"></i></span>
-              <h5>Object Storage-as-a-Service</h5>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            molestiae necessitatibus, totam blanditiis et consectetur laboriosam
-            illo suscipit, alias, officia similique temporibus officiis! Quaerat
-            ullam commodi quae. Alias, suscipit fuga.
-          </div>
-        </div>
-        <div>
-          <div class="row mt-2">
-            <div
-              class="services service-row-2 service-4 col-sm-4 pb-5 pt-5 "
-            >
-              <div class="service-title ">
-                <span class="icon"
-                  ><i class="fa fa-cogs" aria-hidden="true"></i></span>
-                <h5>Disaster Recovery-As-A-Service</h5>
-              </div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem molestiae necessitatibus, totam blanditiis et
-              consectetur laboriosam illo suscipit, alias, officia similique
-              temporibus officiis! Quaerat ullam commodi quae. Alias, suscipit
-              fuga.
-            </div>
-            <div
-              class="services service-row-2 service-5 col-sm-4 pb-5 pt-5"
-            >
-              <div class="service-title ">
-                <span 
-                  ><i class="fa fa-shield icon" aria-hidden="true"></i></span>
-                <h5>Backup As-A-Service</h5>
-              </div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem molestiae necessitatibus, totam blanditiis et
-              consectetur laboriosam illo suscipit, alias, officia similique
-              temporibus officiis! Quaerat ullam commodi quae. Alias, suscipit
-              fuga.
-            </div>
-            <div class="services service-row-2 service-6 col-sm-4 pb-5 pt-5 ">
-              <div class="service-title ">
-                <span class="icon"
-                  ><i class="fa fa-server" aria-hidden="true"></i
-                ></span>
-                <h5>CloudShare (BaaS)</h5>
-              </div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem molestiae necessitatibus, totam blanditiis et
-              consectetur laboriosam illo suscipit, alias, officia similique
-              temporibus officiis! Quaerat ullam commodi quae. Alias, suscipit
-              fuga.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
+    
+    
 </html>
