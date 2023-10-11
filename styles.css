@@ -1,0 +1,85 @@
+:root {
+  --blue: #007bff;
+
+  --red: #f44437;
+}
+.logo img {
+  max-width: 150px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.normal-text {
+  font-size: 24px;
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+/* Service Page  */
+.service {
+  background-image: url(./assets/bg-img.png);
+  background-size: cover;
+  background-color: beige;
+}
+.services {
+  background: none;
+  transition: color 0.5s linear;
+  position: relative;
+  overflow: hidden;
+  transition: 1s  ;
+}
+.service-row-1:hover{
+  color:#f44437 ;
+
+
+}
+.service-row-2:hover{
+  color: #f44437;
+
+}
+.services::before {
+ 
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.service-1, .service-2, .service-4, .service-5 {
+  border-right: 2px solid #f44437;
+  margin: 15px 0 15px 0;
+  padding: 10px 0 10px 0;
+}
+
+.services:hover::before {
+  width: 100%;
+}
+
+.top-row{
+  border-bottom: 2px solid #f44437;
+}
+.service-1::before, .service-2::before, .service-3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.service-1:hover::before, .service-2:hover::before, .service-3:hover::before{
+  height: 180%;
+}
+.service-4::before, .service-5::before, .service-6::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0 ;
+}
